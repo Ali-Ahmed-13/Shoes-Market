@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border-radius: 8px;
+}
+
+body {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(to right, rgba(0, 0, 117, 0.3), rgba(1, 78, 120, 0.3));
+    background-attachment: fixed;
+}
+
+header {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    background: linear-gradient(to right, rgb(0, 0, 117), rgb(1, 78, 120)); 
+    flex-direction: column;
+}
+
+header .logo {
+    max-width: 130px;
+}
+
+header nav {
+    max-width: 50%;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin: auto;
+}
+
+header ul li {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: linear-gradient(to right, rgb(2, 2, 214), rgb(0, 166, 255));
+    margin: 5px;
+    width: auto;
+    transition: background-color 0.3s ease;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+header ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #00aaff;
+}
+
+header ul li a.active {
+    background-color: #004f7c;
+    color: #fff;
+}
+
+header ul li i {
+    padding-left: 15px;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../images/logo.png);
+    background-size: 1200px;
+    background: linear-gradient(to right, rgba(0, 0, 117, 0.50), rgba(1, 78, 120, 0.50)), url(../images/logo.png);
+    opacity: .6;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
+
+.content .Home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+    max-width: 800px;
+    background: linear-gradient(to right, rgba(1, 1, 202, 0.5), rgba(0, 122, 188, 0.5));
+    margin-top: 100px;
+    animation: fadeIn 2s ease-out;
+}
+
+.content .Home h1 {
+    font-size: 102px;
+    color: rgba(255, 255, 255, 0.51);
+    background-color: rgba(0, 0, 0, 0.305);
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.content .Home p {
+    font-size: 30px;
+    color: rgb(255, 186, 186);
+    background: rgba(0, 0, 0, 0.292);
+    letter-spacing: 2px;
+    max-width: 670px;
+}
+
+.hr {
+    height: 5px;
+    width: 100%;
+    background-color: brown;
+    margin: 5px 0;
+}
+
+.content .Products {
+    margin-top: 100px;
+    width: 100%;
+}
+
+.content .Products h1 {
+    font-size: 100px;
+    color: rgba(255, 255, 255, 0.51);
+    background-color: rgba(0, 0, 0, 0.305);
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.content .Products .produc {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.content .Products .produc div {
+    width: 360px;
+    height: 200px;
+    background-color: rgba(240, 248, 255, 0.7);
+    margin-left: 30px;
+    height: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content .Products .produc div img {
+    width: 100%;
+    margin-top: 10px;
+    background-color: rgba(250, 235, 215, 0.551);
+}
+
+.content .Products .produc div button {
+    margin-top: 10px;
+    width: 100%;
+    background: blue;
+    color: white;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.content .Products .produc div button:hover {
+    background-color: #004f7c;
+    transform: scale(1.05);
+}
+
+.content .Products .produc div button:active {
+    transform: scale(0.95);
+}
+
+footer {
+    background: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    max-width: 1200px;
+    margin: 10px auto;
+}
+
+footer p {
+    font-size: 25px;
+}
+
+footer p span {
+    color: aquamarine;
+}
+
+footer p i {
+    font-size: 10px;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #00aaff;
+}
+
+@media (max-width: 1332px) {
+    header {
+        flex-direction: column;
+        justify-content: none;
+    }
+    header nav ul {
+        max-width: 100%;
+        flex-direction: column;
+    }
+    header ul li {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    header ul li {
+        width: auto;
+    }
+    header .logo {
+        max-width: 150px;
+        flex: 2;
+    }
+    header nav ul {
+        flex: 1;
+    }
+    .content {
+        background-size: contain;
+        background-position: center;
+    }
+    .content .Home h1 {
+        font-size: 40px;
+    }
+    .content .Home p {
+        font-size: 20px;
+    }
+    .content .Products h1 {
+        font-size: 50px;
+    }
+    .content .Products .produc div {
+        width: 300px;
+    }
+}
