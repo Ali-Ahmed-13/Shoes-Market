@@ -43,9 +43,11 @@ To run the project locally:
    ```bash
    git clone https://github.com/Ali-Ahmed-13/Shoes-Market.git
 Navigate into the project folder:
-
-cd Shoes-Market
+   ```bash
+   cd Shoes-Market
+```
 Open index.html in your browser
+
 (Tip: use the VS Code Live Server extension for a smoother experience)
 
 🌐 Live Demo
